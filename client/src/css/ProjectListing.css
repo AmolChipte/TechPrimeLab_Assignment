@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700");
+
+
+body{
+    overflow: hidden;
+}
+
+.totalbody{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Nunito Sans", Helvetica, Arial;
+}
+
+/* Sidebar Code */
+.sidebarcontainer{
+    margin: 0px;
+    position: fixed;
+    background: white;
+    width: 4%;
+    height: 99%;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+
+.sidebariconcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 175px;
+}
+
+.sidebaricon{
+    position: relative;
+    padding: 15px 0px;
+}
+
+.sidebarlogoutIcon{
+    position:absolute;
+    margin-top: 225px;
+    margin-left: 20px;
+}
+
+.activeDashboard{
+    position: absolute;
+    border-radius: 5px;
+    height: 50%;
+    width: 20px;
+    background-color: rgb(2,90,171);
+    top:-5px;
+    left: -150%;
+}
+
+/* Dashboard Code */
+.projectlistingcontainer{
+    margin-left: 4%;
+    padding: 30px;
+    background-image: url('../assets/Header-bg.svg');
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    overflow: auto;
+}
+
+.projectlistingHeading{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.projectlistingLogo{
+    display: flex;
+    justify-content: center;
+    margin-left: 50%;
+}
+
+.projectlistingBody{
+    margin: 2%;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    height: 100vh;
+}
+
+.projectlistingSearchbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.projectlistingSearch{
+    position: relative;
+}
+
+.projectlistingMagnifier{
+    width: 15px;
+    padding: 5px;
+    height: 15px;
+    position: absolute;
+}
+
+.projectlistingBar{
+    border: none;
+    border-bottom: 0.5px solid;
+    width: 250px;
+    padding-top: 0px;
+    padding-left:25px;
+    font-size: 15px;
+    outline: none;
+    font-family: "Nunito Sans", Helvetica, Arial;
+}
+
+.projectlistingSort{
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+
+.projectlistingSort:hover{
+    cursor: pointer;
+}
+
+.projectlistingTableDesktop{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.projectlistingTableDesktop th{
+    text-align: left;
+    background-color: #ebf5ff;
+    padding: 10px 0px;
+}
+
+.projectlistingTableMobile{
+    display: none;
+}
+
+.projectlistingTableDescTitle{
+    padding-top: 7.5px;
+    font-weight: bold;
+}
+
+.projectlistingTableDesc{
+    padding-bottom: 7.5px;
+}
+
+.projectlistingButton{
+    padding: 0;
+    margin: 0;
+    width: 75px;
+    height: 30px;
+    border-radius: 25px;
+    color: rgb(2,90,171);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border: 1px solid rgb(2,90,171)
+}
+
+.projectlistingButton:hover{
+    transition: all .2s ease-in-out;
+    background-color: rgb(2,90,171);
+    color: white;
+}
+
+.projectlistingTableDescStatus{
+    font-weight: bold;
+    color: rgb(3, 65, 122);
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.projectlistingTableDate{
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 7.5px;
+}
+
+.projectlistingList{
+
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.projectlistingList a{
+    text-decoration: none;
+}
+
+.totalbody{
+    background-color: white;
+}
+
+.projectlistingList li{
+    border: 1px solid rgba(206, 206, 206, 0.5);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+    color:rgb(17, 130, 236)
+}
+
+.projectlistingList li:hover{
+    transition: all 0.1s ease-in-out;
+    background-color: rgb(4, 121, 230);  
+    color:white;
+    cursor: pointer;
+}
+
+.projectlistingList li.active{
+    background-color: rgb(12, 85, 153);
+    color: white;
+}
+
+.projectlistingGoButton{
+    background-color: rgb(2, 2, 189);
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-height: 720px){
+    @media screen and (max-width: 480px) {   
+        /* Sidebar Code */
+        .sidebarcontainer{
+            margin: 0px;
+            display: flex;
+            left: 0;
+            padding: 0;
+            width: 100%;
+            height: 7%;
+            bottom: 0px;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+        }
+        
+        .sidebariconcontainer{
+            position: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .sidebaricon{
+            padding: 0px 0px;
+            
+        }
+        
+        .sidebarlogoutIcon{
+            position:absolute;
+            margin: 0;
+            margin-top: -15px;
+            margin-left: 10px;
+        }
+        
+        .activeDashboard{
+            position: absolute;
+            border-radius: 5px;
+            height: 50%;
+            width: 20px;
+            background-color: rgb(2,90,171);
+            top:0px;
+            left: 0%;
+        }
+        
+        /* Dashboard Code */
+        .projectlistingcontainer{
+            overflow: hidden;
+            display: fixed;
+            margin: 0px;
+            padding: 0px;
+            background-image: url('../assets/Header-bg.svg');
+            background-color: rgb(240, 240, 240);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        
+        .projectlistingCard{
+            padding: 15px 40px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 5px;
+            background-color: white;
+        }
+
+        .projectlistingHeading{
+            font-size: 20px;
+            margin-left:10px;
+            margin-top:-10px;
+            font-weight: bold;
+            color: white;
+            display: fixed;
+            flex-wrap: wrap;
+            float: left;
+        }
+        
+        .projectlistingLogo{
+            display: flex;
+            justify-content: center;
+            margin-left: 50%;
+            display: none;
+        }
+        
+        .projectlistingBody{
+            margin: 0%;
+            display: flex;
+            flex-direction: column;
+            font-weight: 400;
+            font-size: 15px;
+            background: none;
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            height: 100vh;
+            margin-bottom: -150px;
+        }
+        
+        .projectlistingSearchbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px;
+            margin-top: 0px;
+        }
+        
+        .projectlistingSearch{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 75px;
+        }
+        
+        .projectlistingMagnifier{
+            width: 15px;
+            padding: 5px;
+            height: 15px;
+            position: absolute;
+        }
+        
+        .projectlistingBar{
+            border: none;
+            border-bottom: 0.5px solid;
+            background-color: rgba(0,0,0,0);
+            width: 100px;
+            padding-top: 0px;
+            padding-left:25px;
+            font-size: 15px;
+            outline: none;
+            font-family: "Nunito Sans", Helvetica, Arial;
+        }
+        
+        .projectlistingSort{
+            border: none;
+            font-size: 14px;
+            outline: none;
+        }
+        
+        .projectlistingTableDesktop{
+            display: none;
+        }
+
+        .projectlistingTableMobile{
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            margin-top: 0px;
+            overflow-y: scroll;
+            height: 75%;
+        }
+        
+        .projectlistingTableMobile th{
+            text-align: left;
+            background-color: #ebf5ff;
+            padding: 10px 0px;
+        }
+
+        .projectlistingcontainer{
+            background-color: white;
+        }
+        
+        .projectlistingTableDescTitle{
+            padding-top: 7.5px;
+            font-weight: bold;
+        }
+        
+        .projectlistingTableDesc{
+            padding-bottom: 7.5px;
+        }
+        
+        .projectlistingButton{
+            padding: 0;
+            margin: 0;
+            width: 75px;
+            height: 30px;
+            border-radius: 25px;
+            color: rgb(2,90,171);
+            outline: none;
+            border: none;
+            cursor: pointer;
+            border: 1px solid rgb(2,90,171)
+        }
+        
+        .projectlistingButton:hover{
+            transition: all .2s ease-in-out;
+            background-color: rgb(2,90,171);
+            color: white;
+        }
+        
+        .projectlistingTableDescStatus{
+            font-weight: bold;
+            color: rgb(3, 65, 122);
+            border-bottom: 1px solid rgb(175, 175, 175);
+        }
+        
+        .projectlistingTableDate{
+            font-size: 14px;
+            font-weight: 400;
+            padding-bottom: 7.5px;
+        }
+        
+        .projectlistingList{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin-left: -40px;
+        }
+        
+        .projectlistingList a{
+            text-decoration: none;
+        }
+        
+        .projectlistingList li{
+            border: 1px solid rgba(206, 206, 206, 0.5);
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;   
+            color:rgb(17, 130, 236)
+        }
+        
+        .projectlistingList li:hover{
+            transition: all 0.1s ease-in-out;
+            background-color: rgb(4, 121, 230);  
+            color:white;
+        }
+    }
+    }

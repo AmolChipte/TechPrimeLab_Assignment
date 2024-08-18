@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700");
+
+
+body{
+    overflow: hidden;
+}
+
+.totalbody{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Nunito Sans", Helvetica, Arial;
+}
+
+/* --------------------- Sidebar Code ------------------ */
+.sidebarcontainer{
+    margin: 0px;
+    position: fixed;
+    background: white;
+    width: 4%;
+    height: 99%;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+
+.sidebariconcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 175px;
+}
+
+.sidebaricon{
+    position: relative;
+    padding: 15px 0px;
+}
+
+.sidebarlogoutIcon{
+    position:absolute;
+    margin-top: 225px;
+    margin-left: 20px;
+}
+
+.activeDashboard{
+    position: absolute;
+    border-radius: 5px;
+    height: 50%;
+    width: 20px;
+    background-color: rgb(2,90,171);
+    top:-5px;
+    left: -150%;
+}
+
+/* Dashboard Code */
+.createprojectcontainer{
+    margin-left: 4%;
+    padding: 30px;
+    background-image: url('../assets/Header-bg.svg');
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.createprojectHeading{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.createprojectLogo{
+    display: flex;
+    justify-content: center;
+    margin-left: 50%;
+}
+
+.createprojectBody{
+    margin: 2%;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    height: 100vh;
+}
+
+.createprojectTextarea{
+    width: 50%;
+    font-size: 15px;
+    margin: 10px 40px;
+    border-radius: 5px;
+    height: 50px;
+    font-family: "Nunito Sans", Helvetica, Arial;
+    padding: 10px 15px;
+    resize: none;
+}
+
+.createprojectLabel{
+    color: black;
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+.createprojectSelectList{
+    border-color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    width:100%;
+    height: 50px;
+    padding: 10px;
+}
+
+.createprojectDate{
+    border-color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    height: 50px;
+    padding: 0px 10px;
+}
+
+.createprojectStatus{
+    font-size: 14px;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.createprojectBox{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0px 40px;
+    margin-left: 20px;
+}
+
+.createprojectOptions{
+    display: flex;
+    padding: 20px;
+}
+
+.createprojectButton1{
+    float: right;
+    margin: 10px 40px;
+    color: white;
+    background-color: rgb(2,90,171);
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.createprojectButton2{
+    display: none;
+}
+
+.createprojectpara{
+    display: none;
+}
+
+.createprojectPara{
+    display: none;
+}
+
+/* ---------------- Alerts ----------------- */
+
+.createprojectTextareaalert{
+    width: 50%;
+    font-size: 15px;
+    margin: 10px 40px;
+    border-radius: 5px;
+    height: 50px;
+    font-family: "Nunito Sans", Helvetica, Arial;
+    padding: 10px 15px;
+    resize: none;
+    border: 1.5px solid red;
+}
+
+.createprojectalertInvalid{
+    margin: 0px;
+    padding-left: 45px;
+    color:red;
+    font-size: 15px;
+}
+
+.createprojectAlertLabel{
+    font-size: 14px;
+    margin: 5px 0px;
+    color: red;
+}
+
+.createprojectAlertSelectList{
+    font-size: 15px;
+    border-radius: 5px;
+    width:100%;
+    height: 50px;
+    padding: 10px;
+    border-color: red;
+}
+
+.createprojectAlertPara{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    color: red;
+    margin:5px 0px;
+}
+
+.createprojectAlertDate{
+    font-size: 15px;
+    border-radius: 5px;
+    height: 50px;
+    padding: 0px 10px;
+    border-color: red;
+}
+
+/* ----------------- Mobile View ------------------- */
+
+@media screen and (max-height: 720px){
+    @media screen and (max-width: 480px) {   
+        /* Sidebar Code */
+        .sidebarcontainer{
+            margin: 0px;
+            display: flex;
+            left: 0;
+            padding: 0;
+            width: 100%;
+            height: 7%;
+            bottom: 0px;
+        }
+        
+        .sidebariconcontainer{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .line{
+            display: none;
+        }
+    
+        .sidebaricon{
+            padding: 0px 0px;
+            position: fixed;
+            margin: 10px 50px;
+        }
+        
+        .sidebarlogoutIcon{
+            position: fixed;
+            margin: 0;
+            margin: 0px;
+            top: -593px;
+            left: 330px;
+        }
+        
+        .activeDashboard{
+            display: none;
+        }
+        
+        /* Dashboard Code */
+        .createprojectcontainer{
+            background-color: white;
+            padding: 0px;
+            margin: 0px;
+            background-size: 175%;
+            overflow: scroll;
+        }
+        
+        .createprojectHeading{  
+            padding-left: 25px;
+        }
+        
+        .createprojectLogo{
+            display: none;
+        }
+        
+        .createprojectBody{
+            overflow-y: auto;
+            margin: 0;
+            padding: 0px;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: -120px;
+        }
+        
+        .createprojectTextarea{
+            width: 290px;
+            font-size: 15px;
+            margin: 10px 25px;
+            border-radius: 5px;
+            height: 50px;
+            font-family: "Nunito Sans", Helvetica, Arial;
+            padding: 10px 15px;
+            resize: none;
+        }
+        
+        .createprojectLabel{
+            font-size: 14px;
+            margin: 5px 0px;
+        }
+        
+        .createprojectSelectList{
+            font-size: 15px;
+            border-radius: 5px;
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+        }
+        
+        .createprojectDate{
+            font-size: 15px;
+            border-radius: 5px;
+            height: 50px;
+            padding: 0px 10px;
+        }
+        
+        .createprojectStatus{
+            font-size: 14px;
+            float: left;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .createprojectBox{
+            display: flex;
+            flex-direction: column;
+            width: 325px;
+            margin: 0px 40px;
+            margin: 0px 5px;
+        }
+        
+        .createprojectOptions{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            padding-top: 0px;
+        }
+        
+        .createprojectButton1{
+            display: none;
+        }
+
+        .createprojectButton2{
+            display: block;
+            position: relative;
+            margin: 10px 10px;
+            color: white;
+            background-color: rgb(2,90,171);
+            float: bottom;
+            padding: 10px 50px;
+            outline: none;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        
+        .createprojectTextareaalert{
+            width: 290px;
+            font-size: 15px;
+            margin: 10px 25px;
+            border-radius: 5px;
+            height: 50px;
+            font-family: "Nunito Sans", Helvetica, Arial;
+            padding: 10px 15px;
+            resize: none;
+            border: 1.5px solid red;
+        }
+        
+        .createprojectalertInvalid{
+            margin: 0px;
+            padding-left: 45px;
+            color:red;
+            font-size: 15px;
+        }
+        
+        .createprojectpara{
+            display: none;
+        }
+
+        .createprojectAlertLabel{
+            font-size: 14px;
+            margin: 5px 0px;
+            color: red;
+        }
+
+        .createprojectAlertSelectList{
+            font-size: 15px;
+            border-radius: 5px;
+            width:100%;
+            height: 50px;
+            padding: 10px;
+            border-color: red;
+        }
+
+        .createprojectAlertPara{
+            position: relative;
+            display: block;
+            font-size: 14px;
+            margin:5px 0px;
+            color: red;
+        }
+
+        .createprojectAlertDate{
+            font-size: 15px;
+            border-radius: 5px;
+            height: 50px;
+            padding: 0px 10px;
+            border-color: red;
+        }
+    }
+    }
