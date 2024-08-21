@@ -45,7 +45,8 @@ function Login() {
           if(result.data.status === "Success"){
             navigate("/dashboard")
           }else{
-            setInvalid('loginalertInvalid')
+            // setInvalid('loginalertInvalid')
+            setInvalid(result.data.Message)
           }
         })
     }catch(error){
@@ -96,7 +97,8 @@ function Login() {
             <p className="loginforgetPass">Forgot password?</p>
             <input type="submit" value="Login" className="loginButton" onClick={submit} />
         </form>
-        <p className={invalid}>Invalid credentials</p>
+        {/* <p className={invalid}>Invalid credentials</p> */}
+        <p>{invalid}</p>
     </div>
   </div>
   );
